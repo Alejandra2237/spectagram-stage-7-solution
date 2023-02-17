@@ -111,6 +111,11 @@ const styles = StyleSheet.create({
         flex: 0.85,
         justifyContent: "center"
     },
+    postCardLight:{
+        margin: RFValue(20),
+        backgroundColor: '#eaeaea',
+        borderRadius: RFValue(20)
+    },
     authorNameText: {
         color: "white",
         fontSize: RFValue(20)
