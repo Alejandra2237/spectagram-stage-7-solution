@@ -9,7 +9,7 @@ export default class Logout extends Component {
     render() {
         return (
             <View style={styles.container}>
-                <Text>Logout</Text>
+                <Text>Cerrar Sesión</Text>
             </View>
         );
     }
