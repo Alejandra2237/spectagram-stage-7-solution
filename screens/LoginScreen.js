@@ -65,14 +65,14 @@ export default class LoginScreen extends Component {
                 <TextInput
                     style={styles.textinput}
                     onChangeText={text => this.setState({ email: text })}
-                    placeholder={"Enter Email"}
+                    placeholder={"Ingresa correo"}
                     placeholderTextColor={"#FFFFFF"}
                     autoFocus
                 />
                 <TextInput
                     style={[styles.textinput, { marginTop: 20 }]}
                     onChangeText={text => this.setState({ password: text })}
-                    placeholder={"Enter Password"}
+                    placeholder={"Ingresa contraseña"}
                     placeholderTextColor={"#FFFFFF"}
                     secureTextEntry
                 />
@@ -80,12 +80,12 @@ export default class LoginScreen extends Component {
                     style={[styles.button, { marginTop: 20 }]}
                     onPress={() => this.signIn(email, password)}
                 >
-                    <Text style={styles.buttonText}>Login</Text>
+                    <Text style={styles.buttonText}>Iniciar Sesión</Text>
                 </TouchableOpacity>
                 <TouchableOpacity
                     onPress={() => this.props.navigation.navigate("RegisterScreen")}
                 >
-                    <Text style={styles.buttonTextNewUser}>New User ?</Text>
+                    <Text style={styles.buttonTextNewUser}>Crear cuenta ?</Text>
                 </TouchableOpacity>
             </View>
         );
